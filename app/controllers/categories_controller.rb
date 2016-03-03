@@ -13,9 +13,6 @@ class CategoriesController < ApplicationController
 		@listings = Listing.where(category_id: params[:id])
 		@category = Category.find(params[:id])
     
-#     @listings = Listing.where(subcategory_id: params[:id])
-# 		@category = Category.find(params[:category_id])
-# 		@subcategory = Subcategory.find(params[:id])
 	end
 
 end
